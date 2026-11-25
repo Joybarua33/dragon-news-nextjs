@@ -4,6 +4,7 @@ import Link from "next/link";
 import { CiBookmark, CiShare2, CiStar } from "react-icons/ci";
 import { FaArrowRight, FaEye } from "react-icons/fa";
 
+
 const NesDetailsPage = async ({ params }) => {
   const { id } = await params;
   const news = await getNewsDetailsById(id);
